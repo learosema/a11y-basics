@@ -1,30 +1,44 @@
 # Accessibility basics
 
-
-- Inclusive Design and Accessibility
+- Inclusive Design and Accessibility: Definition 
 - Exclusionary Design in Architecture
   - Buildings retrofitted to meet a11y standards
   - Stigmatizing design
   - Wheelchair ramps which are too steep
   - Parking Slots with not enough space for wheelchairs
+- Disabilities
+  - temporary (eg. broken arm) or permanent
+  - obtained at birth or when getting older
 - Types of disabilities
-  - can be temporary (eg. broken arm)
-  - can be obtained when getting older
   - Low vision
   - Color blindness
   - Motor disabilities
-  - Blindness
+  - Hearing disabilities
   - Deafness
+  - Blindness
   - Deafblindness
+  - Cognitive Disabilities
 - Assistive technologies
-- Criterias for Accessible Web Pages
+  - Screenreader
+  - Braille line
 - Laws
+- Criterias for Accessible Web Pages
+  - keyboard navigation
+  - visible focus outline
+  - colors (contrast, conveying information)
+  - non-text content (alt text, closed captions, transcript)
 - Web a11y basics
   - Page structure and document semantics
-  - Tab focus order
+    - html lang attribute
+    - title attribute
+    - meta viewport tag
+  - Typography
+  - Headline hierarchy
+  - Page navigation
+  - Tab focus order and `tabindex`
   - Alt text
-  - Inclusive design patterns
+  - Inclusive design patterns 
+    - WAI-ARIA 
     - Skip links
     - Form errors
-    - 
  
