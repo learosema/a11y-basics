@@ -1,27 +1,18 @@
 # Accessibility basics
 
-- Inclusive Design and Accessibility: Definition 
-- Exclusionary Design in Architecture
+- [Accessibility Fundamentals](fundamentals/)
+  - What is Accessibility
+  - Myths about Accessibility
+  - Types of Disabilities
+  - Laws and Guidelines
+- [Exclusionary Design in Architecture](exclusionary-design-architecture.md)
   - Buildings retrofitted to meet a11y standards
   - Stigmatizing design
   - Wheelchair ramps which are too steep
   - Parking Slots with not enough space for wheelchairs
-- Disabilities
-  - temporary (eg. broken arm) or permanent
-  - obtained at birth or when getting older
-- Types of disabilities
-  - Low vision
-  - Color blindness
-  - Motor disabilities
-  - Hearing disabilities
-  - Deafness
-  - Blindness
-  - Deafblindness
-  - Cognitive Disabilities
 - Assistive technologies
   - Screenreader
   - Braille line
-- Laws
 - Criterias for Accessible Web Pages
   - keyboard navigation
   - visible focus outline
