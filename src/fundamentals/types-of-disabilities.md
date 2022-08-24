@@ -48,6 +48,8 @@
 ### Web Accessibility needs
 
 - Audio content should include closed captions and ideally also a transcript
+- Sign language (WCAG AAA-level)
+
 
 ## Blindness
 
