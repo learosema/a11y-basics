@@ -2,9 +2,10 @@
 
 - Low vision
 - Color blindness
-- Motor disabilities
+- Motor and dexterity disabilities
 - Hearing disabilities
 - Deafness
 - Blindness
 - Deafblindness
 - Cognitive Disabilities
+- Seizure Disorders
