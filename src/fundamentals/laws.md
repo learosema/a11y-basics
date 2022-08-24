@@ -2,7 +2,7 @@
 
 ## European Union
 
-- [EN 301 549d](http://mandate376.standards.eu/standard): "Accessibility requirements suitable for public procurement of ICT products and services in Europe"
+- [EN 301 549](http://www.etsi.org/deliver/etsi_en/301500_301599/301549/01.01.01_60/en_301549v010101p.pdf): "Accessibility requirements suitable for public procurement of ICT products and services in Europe"
 
 ## Germany
 
@@ -10,3 +10,7 @@ Government websites must comply with _Barrierefreie-Informationstechnik-Verordnu
 
 - [Barrierefreie-Informationstechnik-Verordnung (BITV 2)](http://www.gesetze-im-internet.de/bitv_2_0/index.html)
 - [Barrierefreiheitsstärkungsgesetz](https://www.bundesfachstelle-barrierefreiheit.de/DE/Fachwissen/Produkte-und-Dienstleistungen/Barrierefreiheitsstaerkungsgesetz/barrierefreiheitsstaerkungsgesetz_node.html)
+
+## Spain
+
+Government websites must comply with Law 34/2002, Law 51/2003, which is based on WCAG 1.0, Level AA.
