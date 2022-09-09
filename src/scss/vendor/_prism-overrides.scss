@@ -1,0 +1,17 @@
+pre[class^="language-"] {
+  border-radius: 1rem;
+
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 8px;
+  }
+
+}

@@ -1,0 +1,3 @@
+.flow[class] > * + * {
+  margin-block-start: var(--flow-margin, 1rem);
+}

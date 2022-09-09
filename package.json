@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run dev -s",
+    "dev": "gulp && concurrently 'gulp watch' 'eleventy --serve'",
+    "build": "rm -rf dist && tsc -d --emitDeclarationOnly && gulp && eleventy",
+    "production": "cross-env NODE_ENV=production npm run build",
+    "prepublishOnly": "npm run production",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -18,6 +23,20 @@
   },
   "homepage": "https://github.com/learosema/a11y-basics#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
+    "concurrently": "^7.4.0",
+    "cross-env": "^7.0.3",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-esbuild": "^0.10.5",
+    "gulp-sass": "^5.1.0",
+    "html-minifier": "^4.0.0",
+    "mozjpeg": "^8.0.0",
+    "sass": "^1.54.9"
+  },
+  "dependencies": {
+    "get-google-fonts": "^1.2.2",
+    "gulp-imagemin": "^8.0.0"
   }
 }

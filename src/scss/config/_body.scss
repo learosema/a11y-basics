@@ -1,0 +1,8 @@
+body {
+  color: var(--main-fg);
+  background: var(--main-bg);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
