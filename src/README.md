@@ -11,25 +11,29 @@
   - Wheelchair ramps which are too steep
   - Parking Slots with not enough space for wheelchairs
 - Assistive technologies
+  - Low vision utilities
   - Screenreader
   - Braille line
+  - Mouth stick 
 - Criterias for Accessible Web Pages
   - keyboard navigation
   - visible focus outline
   - colors (contrast, conveying information)
   - non-text content (alt text, closed captions, transcript)
-- Web a11y basics
-  - Page structure and document semantics
-    - html lang attribute
-    - title attribute
-    - meta viewport tag
-  - Typography
-  - Headline hierarchy
+- Page structure and document semantics
+  - html lang attribute
+  - title attribute
+  - meta viewport tag
+  - Typography and Headline hierarchy
   - Page navigation
   - Tab focus order and `tabindex`
   - Alt text
-  - Inclusive design patterns 
-    - WAI-ARIA 
-    - Skip links
-    - Form errors
+- Tools for Accessibility checking
+  - aXe
+  - WAVE
+  - lighthouse
+- Inclusive design patterns 
+  - WAI-ARIA 
+  - Skip links
+  - Form errors
  
