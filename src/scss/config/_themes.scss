@@ -1,0 +1,20 @@
+
+// Dark theme (default)
+//----------------------------------------------------
+:root {
+  --main-bg: #{$black};
+  --main-fg: #{$white};
+  --nav-bg: #{$ruby--200};
+  --nav-fg: #{$white};
+  --nav-bg--hover: #{$black};
+  --footer-bg: #{$cornflower--300};
+  --footer-fg: #{$white};
+
+  --button-bg--primary: #{$ruby--200};
+  --button-fg--primary: #{$white};
+}
+
+html.theme--light {
+  --main-bg: #{$white};
+  --main-fg: #{$black};
+}
