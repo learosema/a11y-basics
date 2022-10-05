@@ -1,0 +1,15 @@
+:root {
+  --bg: $grey--400;
+  --fg: $white;
+  
+  --underline-1: $ruby-200;
+  --underline-2: $cornflower-200;
+}
+
+@media screen and (prefers-color-scheme: light) {
+  --bg: $white;
+  --fg: $grey--400;
+  
+  --underline-1: $ruby-300;
+  --underline-2: $cornflower-200;
+}
