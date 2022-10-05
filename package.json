@@ -1,15 +1,13 @@
 {
   "name": "a11y-basics",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Lea's Accessibility Talk",
   "scripts": {
     "start": "npm run dev -s",
     "dev": "gulp && concurrently 'gulp watch' 'eleventy --serve'",
-    "build": "rm -rf dist && tsc -d --emitDeclarationOnly && gulp && eleventy",
+    "build": "rm -rf dist && gulp && eleventy",
     "production": "cross-env NODE_ENV=production npm run build",
-    "prepublishOnly": "npm run production",
-    "semantic-release": "semantic-release"
+    "prepublishOnly": "npm run production"
   },
   "repository": {
     "type": "git",
