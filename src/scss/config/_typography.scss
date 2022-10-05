@@ -14,7 +14,7 @@ h5 {
   color: $ruby--100;
 }
 
-u, .underline {
+@mixin underline {
   --shadow: 0.08em;
   --minus-shadow: calc(-1 * var(--shadow));
   
@@ -35,9 +35,13 @@ u, .underline {
   background-position: left 100%;
 }
 
+u {
+  @include underline;
+}
+
 
 h1 {
-  @include .underline;
+  @include underline;
   font-size: $size--700;
   line-height: 1.4;
   color: $papaya-whip--300;
