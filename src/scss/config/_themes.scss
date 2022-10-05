@@ -2,7 +2,7 @@
 // Dark theme (default)
 //----------------------------------------------------
 :root {
-  --bg: #{$black};
+  --bg: #{$grey-400};
   --fg: #{$white};
   --nav-bg: #{$ruby--200};
   --nav-fg: #{$white};
@@ -18,8 +18,8 @@
 }
 
 html.theme--light {
-  --main-bg: #{$white};
-  --main-fg: #{$black};
+  --bg: #{$grey-400};
+  --fg: #{$black};
   
   --underline-1: #{$ruby-300};
   --underline-2: #{$cornflower-300};
