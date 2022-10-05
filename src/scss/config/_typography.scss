@@ -14,7 +14,30 @@ h5 {
   color: $ruby--100;
 }
 
+u, .underline {
+  --shadow: 0.08em;
+  --minus-shadow: calc(-1 * var(--shadow));
+  
+  text-decoration: none;
+  text-shadow: 
+    var(--shadow) 0 0 var(--bg), 
+    0 var(--shadow) 0 var(--bg), 
+    0 var(--mshadow) 0 var(--bg), 
+    var(--mshadow) 0 0 var(--bg),
+    var(--mshadow) var(--minus-shadow) 0 var(--bg),
+     var(--shadow) var(--minus-shadow) 0 var(--bg),
+     var(--shadow) var(--shadow) 0 var(--bg),
+    var(--mshadow) var(--shadow) 0 var(--bg);
+  
+  background-image: linear-gradient(90deg, var(--underline-1), var(--underline-2));
+  background-size: 100% max(.1em, 1px);
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+
+
 h1 {
+  @include .underline;
   font-size: $size--700;
   line-height: 1.4;
   color: $papaya-whip--300;
@@ -81,3 +104,4 @@ a {
 code {
   color: $badass--100;
 }
+
