@@ -7,9 +7,11 @@
 }
 
 @media screen and (prefers-color-scheme: light) {
-  --bg: $white;
-  --fg: $grey--400;
+  :root {
+    --bg: $white;
+    --fg: $grey--400;
   
-  --underline-1: $ruby-300;
-  --underline-2: $cornflower-200;
+    --underline-1: $ruby-300;
+    --underline-2: $cornflower-200;
+  }
 }
