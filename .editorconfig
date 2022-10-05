@@ -1,18 +1,16 @@
 # EditorConfig is awesome: https://EditorConfig.org
 
-# top-most EditorConfig file
 root = true
 
-# Unix-style newlines with a newline ending every file
 [*]
+charset = utf-8
 end_of_line = lf
 insert_final_newline = true
-
-# Matches multiple files with brace expansion notation
-# Set default charset
-[*.{js,ts,json,yaml,njk}]
-charset = utf-8
 trim_trailing_whitespace = true
+
+[*.{js,ts,json,yaml,njk,css,scss,html}]
 indent_style = space
 indent_size = 2
+
+[*.{js,mjs,ts}]
 quote_type = single
