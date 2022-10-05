@@ -16,7 +16,7 @@ const criticalStyles = ['index.scss'];
 const calculateOutput = ({ history }) => {
   // By default, we want a CSS file in our dist directory, so the
   // HTML can grab it with a <link />
-  let response = './dist/css';
+  let response = './public/css';
 
   // Get everything after the last slash
   const sourceFileName = path.basename(history[0]);

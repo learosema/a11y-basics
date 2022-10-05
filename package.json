@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npm run dev -s",
     "dev": "gulp && concurrently 'gulp watch' 'eleventy --serve'",
-    "build": "rm -rf dist && gulp && eleventy",
+    "build": "rm -rf public && gulp && eleventy",
     "production": "cross-env NODE_ENV=production npm run build",
     "prepublishOnly": "npm run production"
   },
