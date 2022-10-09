@@ -1,0 +1,8 @@
+{
+  "pagination": {
+    "data": "backgrounds",
+    "size": 1,
+    "alias": background
+  },
+  permalink: "backgrounds/{{ background.name }}.svg"
+}
