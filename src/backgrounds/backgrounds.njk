@@ -25,6 +25,7 @@ permalink: backgrounds/{{ background.seed }}.svg
       {%- set Y = (H_2 + H_2 * rand) | round -%}
       {%- set path = path + X + " " + Y + " " -%}
     {%- endfor -%}
+    {%- set path = path + "V" + W + "H0Z" -%}
     <path d="{{ path }}" fill="{{ background.color2 }}" fill-opacity="{{ 1 / CURVES }}"/>
   {%- endfor -%}
 </svg>
