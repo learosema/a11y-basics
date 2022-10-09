@@ -1,0 +1,24 @@
+---
+pagination:
+    data: backgrounds
+    size: 1
+    alias: background
+permalink: "backgrounds/{{ background.name }}.svg"
+---
+- seed = background.seed
+- CURVES = 4
+- POINTS = 5
+- W = 300
+- H = 300
+- prng = () => (seed = ((seed * 16807 % 2147483647) - 1) / 2147483647)
+- rand = (a, b) => Math.floor(a + prng() * (b-a + 1))
+- genPoints = () => Array.from({length: POINTS}, (_, i) => ({x: (i+.5) * W/POINTS, y: rand(H/3,H*.77)}))
+- data = Array.from({length: CURVES}, genPoints)
+- points = genPoints()
+svg(xmlns="http://www.w3.org/2000/svg", version="1.1", viewBox=`0 0 ${W} ${H}`, preserveAspectRatio="none")
+  rect(width=W,height=H,fill=background.color1)
+  each points in data
+    each p in points
+      - curve = `M0 ${H/2}S${points.map(p => `${p.x} ${p.y}`).join(' ')} ${W} ${H/2}`
+    path(d=`${curve}V${H}H0Z`, fill=background.color2, fill-opacity=1/CURVES)
+    

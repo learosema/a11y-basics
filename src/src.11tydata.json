@@ -1,3 +1,5 @@
 {
-  "layout": "layouts/base.njk"
+  "layout": "layouts/base.njk",
+  "author": "Lea Rosema",
+  ""
 }

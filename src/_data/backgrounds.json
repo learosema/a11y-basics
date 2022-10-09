@@ -1,0 +1,4 @@
+[
+  {name: "background-1", seed: 12, color1: "rebeccapurple", color2: "deeppink"},
+  {name: "background-2", seed: 432, color1: "#111", color2: "#777"}
+]

@@ -1,15 +1,8 @@
 ---
-title: Home
-description: Home page.
-author: Lea Rosema
-eleventyExcludeFromCollections: true
+title: Accessibility fundamentals
+background: background-1.svg
 ---
 
-# Hello world
+# Accessibility fundamentals
 
-Lorem ipsum dolor sit amet
-
-- This
-- is
-- a little
-- test
+by Lea Rosema
