@@ -14,7 +14,7 @@ permalink: backgrounds/{{ background.name }}.svg
 <svg
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 {{ W }} {{ H }}"
-  preserveAspectRatio="none" backgroundSeed="{{ background.seed }}" seed="{{ seed }}">
+  preserveAspectRatio="none">
   <rect width="{{ W }}" height="{{ H }}" fill="{{ background.color1 }}"/>
   {%- for curve in range(0, CURVES) -%}
     {%- set path = "M0 " + H_2 + "S" -%}
@@ -25,7 +25,7 @@ permalink: backgrounds/{{ background.name }}.svg
       {%- set Y = (H_2 + H_2 * rand) | round -%}
       {%- set path = path + X + " " + Y + " " -%}
     {%- endfor -%}
-    {%- set path = path + "V" + H + "H0Z" -%}
+    {%- set path = path + "V" + H + " H0Z" -%}
     <path d="{{ path }}" fill="{{ background.color2 }}" fill-opacity="{{ 1 / CURVES }}"/>
   {%- endfor -%}
 </svg>
