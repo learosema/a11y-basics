@@ -7,9 +7,8 @@ permalink: backgrounds/{{ background.name }}.svg
 ---
 {%- set W = 300 -%}
 {%- set H = 300 -%}
-{%- set H_2 = H / 2 -%}
 {%- set CURVES = 4 -%}
-{%- set POINTS = 5 -%}
+{%- set POINTS = 6 -%}
 {%- set seed = background.seed | int -%}
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -21,8 +20,8 @@ permalink: backgrounds/{{ background.name }}.svg
     {%- for pointIndex in range(0, POINTS) -%}
       {%- set seed = seed * 16807 % 2147483647 -%}
       {%- set rand = seed / 2147483647 -%}
-      {%- set X = (pointIndex + 0.5) * W / POINTS -%}
-      {%- set Y = (H_2 + H_2 * rand) | round -%}
+      {%- set X = (pointIndex + 0.5) * W / (POINTS - 1) -%}
+      {%- set Y = (H * (0.5 + 0.3 * rand)) | round -%}
       {%- set path = path + X + " " + Y + " " -%}
     {%- endfor -%}
     {%- set path = path + "V" + H + " H0Z" -%}
