@@ -2,7 +2,7 @@
   "pagination": {
     "data": "backgrounds",
     "size": 1,
-    "alias": background
+    "alias": "background"
   },
-  permalink: "backgrounds/{{ background.name }}.svg"
+  "permalink": "backgrounds/{{ background.name }}.svg"
 }
