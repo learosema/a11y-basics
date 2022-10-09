@@ -3,7 +3,7 @@
     "name": "blue",
     "seed": 12,
     "color1": "#001",
-    "color2": "mediumslateblue"
+    "color2": "darkslateblue"
   },
   {
     "name": "pink",
@@ -21,6 +21,6 @@
     "name": "red",
     "seed": 76,
     "color1": "#100",
-    "color2": "#201"
+    "color2": "#412"
   }
 ]
