@@ -6,7 +6,8 @@ module.exports = function(config) {
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   config.setUseGitIgnore(false);
   config.addTransform('htmlmin', htmlMinTransform);
-  config.addTransform('underlineh1', underlineH1Transform); 
+  config.addTransform('underlineh1', underlineH1Transform);
+  config.addPlugin(pluginSyntaxHighlight);
   // Return your Object options:
   return {
     markdownTemplateEngine: 'njk',
