@@ -1,14 +1,26 @@
 [
   {
-    "name": "purplepink",
+    "name": "blue",
     "seed": 12,
-    "color1": "rebeccapurple",
-    "color2": "deeppink"
+    "color1": "midnightblue",
+    "color2": "mediumslateblue"
   },
+  {
+    "name": "pink",
+    "seed": 52,
+    "color1": "indigo",
+    "color2": "rebeccapurple"
+  }
   {
     "name": "grayish",
     "seed": 432,
     "color1": "#111",
-    "color2": "#777"
+    "color2": "#444"
+  },
+  {
+    "name": "red"
+    "seed": 76,
+    "color1": "maroon",
+    "color2": "crimson"
   }
 ]
