@@ -16,7 +16,7 @@ permalink: backgrounds/{{ background.name }}.svg
   preserveAspectRatio="none">
   <rect width="{{ W }}" height="{{ H }}" fill="{{ background.color1 }}"/>
   {%- for curve in range(0, CURVES) -%}
-    {%- set path = "M0 " + H_2 + "S" -%}
+    {%- set path = "M0 " + H/2 + "S" -%}
     {%- for pointIndex in range(0, POINTS) -%}
       {%- set seed = seed * 16807 % 2147483647 -%}
       {%- set rand = seed / 2147483647 -%}
