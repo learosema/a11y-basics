@@ -1,0 +1,10 @@
+.stack {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas: "stack";
+
+  > * {
+    grid-area: stack;
+  }
+}

@@ -6,13 +6,25 @@
     "color2": "darkslateblue"
   },
   {
+    "name": "blue-light",
+    "seed": 12,
+    "color1": "#fff",
+    "color2": "#3bf"
+  },
+  {
     "name": "pink",
     "seed": 52,
     "color1": "#213",
     "color2": "#639"
   },
   {
-    "name": "grayish",
+    "name": "gray",
+    "seed": 432,
+    "color1": "#111",
+    "color2": "#444"
+  },
+  {
+    "name": "white",
     "seed": 432,
     "color1": "#111",
     "color2": "#444"

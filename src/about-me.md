@@ -1,5 +1,7 @@
 ---
-layout: layouts/base.njk
+title: About Me
+layout: layouts/slide.njk
+variant: slide--with-image
 ---
 
 # About me
@@ -8,4 +10,4 @@ layout: layouts/base.njk
 - Senior Software Engineer
 - Novatec Consulting GmbH
 
-![A Kitten](images/600.jpeg)
+![Lea, wearing a Novatec Shirt and a lace skirt](/images/lea.jpg)

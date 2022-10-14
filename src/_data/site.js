@@ -1,5 +1,5 @@
 module.exports = {
-  name: "Lea's WebGL world",
+  name: "Accessibility basics",
   description: 'Various WebGL demos by Lea Rosema',
   url: '',
 };

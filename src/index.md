@@ -1,9 +1,7 @@
 ---
 title: Accessibility fundamentals
-background: background-1.svg
-layout: layouts/base.njk
+background: backgrounds/pink.svg
+layout: layouts/slide.njk
+variant: slide--h1
 ---
-
 # Accessibility fundamentals
-
-by Lea Rosema
