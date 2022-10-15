@@ -20,8 +20,10 @@
         {{ content | safe }}
       {% endblock %}
     </main>
+    <footer>
     {% block footer %}
     {% endblock %}
+    </footer>
     <script async src="{{ site.url }}/index.js"></script>
     {% block scripts %}
     {% endblock %}

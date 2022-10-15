@@ -1,1 +1,3 @@
-console.log('Hello world.')
+import './navigation.js';
+
+console.log('Hello world.');
