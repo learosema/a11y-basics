@@ -1,0 +1,16 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  td, th {
+    background: var(--bg);
+    color: var(--fg);
+    border: 2px solid var(--fg);
+    text-align: right;
+    padding: .5rem 1rem;
+
+    &:nth-child(1) {
+      text-align: left;
+    }
+  }
+}

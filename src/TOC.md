@@ -1,3 +1,7 @@
+---
+eleventyExcludeFromCollections: true
+---
+
 # Accessibility basics
 
 ## Accessibility Fundamentals
@@ -8,7 +12,7 @@
   - An important aspect of Software architecture
 - Myths about Accessibility
   - A11y makes web sites ugly
-  - A11y is expensive 
+  - A11y is expensive
 
 ## Types of Disabilities
 
@@ -25,7 +29,7 @@
 - Low vision utilities
 - Screenreader
 - Braille line
-- Mouth stick 
+- Mouth stick
 
 ## Exclusionary Design
 
@@ -38,13 +42,11 @@
 
 ## Laws
 
-
 ## Guidelines
 
 - WCAG
 - ATAG
- 
-  
+
 ## Criterias for Accessible Web Pages
 
 - keyboard navigation
@@ -69,9 +71,8 @@
 - lighthouse
 - CI/CD integration
 
-## Inclusive design patterns 
+## Inclusive design patterns
 
-- WAI-ARIA 
+- WAI-ARIA
 - Skip links
 - Form errors
-  

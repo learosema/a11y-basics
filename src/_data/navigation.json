@@ -1,8 +1,12 @@
 {
   "items": [
     {
-      "text": "Home",
+      "text": "Start",
       "href": "/"
-    }  
+    },
+    {
+      "text": "About Me",
+      "href": "/about-me"
+    }
   ]
 }

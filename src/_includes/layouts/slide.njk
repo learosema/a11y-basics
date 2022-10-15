@@ -13,3 +13,49 @@
   {% endif %}
 </div>
 {% endblock %}
+
+{% block footer %}
+
+{%- set leftIcon -%}
+  {% include "icons/left.svg" %}
+{%- endset -%}
+
+{%- set leftIconAlt -%}
+  <span class="visually-hidden">Previous slide</span>
+{%- endset -%}
+
+{%- set rightIcon -%}
+  {% include "icons/right.svg" %}
+{%- endset -%}
+
+{%- set rightIconAlt -%}
+  <span class="visually-hidden">Next slide</span>
+{%- endset -%}
+
+<nav class="arrow-nav">
+  <ul>
+    <li>
+      {% if prev %}
+        <a class="button" href="{{ prev }}">
+          {{ leftIcon | safe }} {{leftIconAlt | safe }}
+        </a>
+      {% else %}
+        <button class="button" disabled>
+          {{ leftIcon | safe }} {{ leftIconAlt | safe}}
+        </button>
+      {% endif %}
+    </li>
+    <li>
+      {% if next %}
+        <a class="button" href="{{ next }}">
+          {{ rightIcon | safe }} {{ rightIconAlt | safe }}
+        </a>
+      {% else %}
+        <button class="button" disabled>
+          {{ rightIcon | safe }} {{ rightIconAlt | safe }}
+        </button>
+      {% endif %}
+    </li>
+  </ul>
+</nav>
+{% endblock %}

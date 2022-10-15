@@ -10,8 +10,11 @@
   --footer-bg: #{$cornflower--300};
   --footer-fg: #{$white};
 
-  --button-bg--primary: #{$ruby--200};
+  --button-bg--primary: transparent;
   --button-fg--primary: #{$white};
+  --button-bg--primary-disabled: transparent;
+  --button-fg--primary-disabled: #{$grey--200};
+  --button-outline: 2px solid #{$white};
 
   --underline-1: #{$ruby--200};
   --underline-2: #{$cornflower--200};
@@ -23,4 +26,6 @@ html.theme--light {
 
   --underline-1: #{$ruby--300};
   --underline-2: #{$cornflower--300};
+  --button-fg--primary: #{$black};
+  --button-outline: 2px solid #{$black};
 }
