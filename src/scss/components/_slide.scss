@@ -1,9 +1,9 @@
 .slide {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
-  > * {
+  &__content {
     width: min(100% - 3rem, var(--container-max, 60ch));
     margin-inline: auto;
   }
@@ -19,19 +19,24 @@
     max-width: unset;
   }
 
-  &--h1 {
+  &--centered {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
 
   &--with-image {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    justify-content: space-between;
 
-    img {
-      width: 100%;
+    .slide__content {
+      width: min(100% - 3rem, var(--container-max, 50ch));
+    }
+
+    .slide__side-image {
+      max-height: 100%;
       object-fit: cover;
       grid-column: 2 / 3;
     }

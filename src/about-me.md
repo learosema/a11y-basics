@@ -2,12 +2,18 @@
 title: About Me
 layout: layouts/slide.njk
 variant: slide--with-image
+sideImage: /images/lea.jpg
+sideImageAlt: Lea, wearing a Novatec Shirt and a lace skirt
+background: /backgrounds/gray.svg
 ---
 
 # About me
 
-## Lea Rosema
-- Senior Software Engineer
-- Novatec Consulting GmbH
+## Lea Rosema (she/her)
 
-![Lea, wearing a Novatec Shirt and a lace skirt](/images/lea.jpg)
+### Senior Software Engineer
+
+#### Novatec GmbH
+
+- in ❤ with the Web platform
+- creates digital arts in her spare time

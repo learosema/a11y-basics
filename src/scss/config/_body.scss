@@ -5,4 +5,11 @@ body {
 
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+
+@supports (-webkit-touch-callout: none) {
+  body {
+    height: -webkit-fill-available;
+  }
 }

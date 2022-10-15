@@ -1,10 +1,15 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-<article class="slide {{ variant }}">
+<div class="slide {{ variant }}">
   {% if background %}
     <img class="slide__background" alt="" role="none" aria-hidden="true" src="{{ background }}">
   {% endif %}
+  <article class="slide__content | flow">
   {{ content | safe }}
-</article>
+  </article>
+  {% if sideImage %}
+    <img class="slide__side-image" src="{{ sideImage }}" alt="{{ sideImageAlt }}">
+  {% endif %}
+</div>
 {% endblock %}
