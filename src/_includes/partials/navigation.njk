@@ -2,9 +2,9 @@
   {% include 'partials/burger.njk' %}
   <section class="navigation__layer">
     <ul>
-    {% for item in navigation.items %}
+    {% for item in collections.slides %}
       <li>
-        <a href="{{ site.url }}{{ item.href }}" {{ helpers.getLinkActiveState(item.href, page.url) | safe }}>{{ item.text }}</a>
+        <a href="{{ site.url }}{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.data.title }}</a>
       </li>
     {% endfor %}
     </ul>

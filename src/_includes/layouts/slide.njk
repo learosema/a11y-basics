@@ -9,7 +9,7 @@
   {{ content | safe }}
   </article>
   {% if sideImage %}
-    <img class="slide__side-image" src="{{ sideImage }}" alt="{{ sideImageAlt }}">
+    <img class="slide__side-image" src="{{ sideImage }}" alt="{{ sideImageAlt }}" width="{{ sideImageWidth }}">
   {% endif %}
 </div>
 {% endblock %}
@@ -32,27 +32,34 @@
   <span class="visually-hidden">Next slide</span>
 {%- endset -%}
 
+{% set previousSlide = collections.slides | getPreviousCollectionItem(page) %}
+{% set nextSlide = collections.slides | getNextCollectionItem(page) %}
+
 <nav class="arrow-nav">
   <ul>
     <li>
-      {% if prev %}
-        <a class="button" href="{{ prev }}">
-          {{ leftIcon | safe }} {{leftIconAlt | safe }}
+      {% if previousSlide %}
+        <a class="button" href="{{ previousSlide.url }}">
+          {{ leftIcon | safe }} 
+          <span class="visually-hidden">{{ previousSlide.data.title }}</span>
         </a>
       {% else %}
         <button class="button" disabled>
           {{ leftIcon | safe }} {{ leftIconAlt | safe}}
+          <span class="visually-hidden">Previous slide</span>
         </button>
       {% endif %}
     </li>
     <li>
-      {% if next %}
-        <a class="button" href="{{ next }}">
-          {{ rightIcon | safe }} {{ rightIconAlt | safe }}
+      {% if nextSlide %}
+        <a class="button" href="{{ nextSlide.url }}">
+          {{ rightIcon | safe }}
+          <span class="visually-hidden">{{ nextSlide.data.title }}</span>
         </a>
       {% else %}
         <button class="button" disabled>
-          {{ rightIcon | safe }} {{ rightIconAlt | safe }}
+          {{ rightIcon | safe }}
+          <span class="visually-hidden">Next slide</span>
         </button>
       {% endif %}
     </li>

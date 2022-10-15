@@ -3,8 +3,9 @@ title: Most common WCAG Failures
 background: /backgrounds/pink.svg
 layout: layouts/slide.njk
 variant: slide--centered
-prev: /about-me
 ---
+
+# Most common WCAG errors
 
 | WCAG Failure Type                   | 2022  | 2021  |
 | ----------------------------------- | ----- | ----- |

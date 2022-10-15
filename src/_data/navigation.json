@@ -1,12 +1,14 @@
-{
-  "items": [
-    {
-      "text": "Start",
-      "href": "/"
-    },
-    {
-      "text": "About Me",
-      "href": "/about-me"
-    }
-  ]
-}
+[
+  "", 
+  "about-me",
+  "laws",
+  "guidelines",
+  "wcag",
+  "wcag-perceivable",
+  "wcag-operable",
+  "wcag-understandable",
+  "wcag-robust",
+  "most-wcag-failures",
+  "atag",
+  "wai-aria"
+]

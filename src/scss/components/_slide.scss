@@ -5,9 +5,8 @@
   display: flex;
 
   &__content {
-    padding: 1.5rem;
-    max-width: 60ch;
-    margin: 0 auto;
+    padding: 2rem 4rem;
+    max-width: 1200px;
   }
 
   &__background {
@@ -31,16 +30,14 @@
 
   &--with-image {
 
-
     .slide__content {
-      flex: 1 1 67%;
+      flex: 0 1 100%;
     }
 
     .slide__side-image {
-      flex: 0 1 auto;
+      flex: 1 1 33%;
       max-height: 100%;
       object-fit: cover;
-      grid-column: 2 / 3;
     }
   }
 
