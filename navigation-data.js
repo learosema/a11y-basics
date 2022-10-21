@@ -1,0 +1,20 @@
+module.exports = [
+  "",
+  "about-me",
+  "what-is-accessibility",
+  "accessibility-is-freedom",
+  "laws",
+  "laws-eu",
+  "laws-de",
+  "guidelines",
+  "wcag",
+  "wcag-perceivable",
+  "wcag-operable",
+  "wcag-understandable",
+  "wcag-robust",
+  "atag",
+  "wai-aria",
+  "most-wcag-failures",
+  "how-to-fix-buttons",
+  "how-to-fix-buttons-fixed"
+];

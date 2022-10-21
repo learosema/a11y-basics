@@ -7,6 +7,7 @@ layout: layouts/slide.njk
 
 - Almost entirely for screenreader users
 - Used to fill the gaps between the features of HTML and accessibility needs of web applications
+- Prefer semantic HTML over aria attributes. See also: [No ARIA is better than bad aria](https://www.w3.org/WAI/ARIA/apg/practices/read-me-first/#no_aria_better_bad_aria)
 
 ## ARIA can help screen reader users know...
 

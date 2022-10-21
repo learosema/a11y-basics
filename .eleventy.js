@@ -1,7 +1,8 @@
 const htmlMinTransform = require('./eleventy/html-min-transform');
 const underlineH1Transform = require('./eleventy/underline-h1-transform');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const navigationData = require('./src/_data/navigation.json');
+
+const navigationData = require('./navigation-data');
 
 module.exports = function (config) {
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
