@@ -1,11 +1,11 @@
 ---
-title: Most common WCAG Failures
+title: Most common A11y errors
 background: /backgrounds/pink.svg
 layout: layouts/slide.njk
 variant: slide--centered
 ---
 
-# Most common WCAG errors
+# Most common A11y errors
 
 | WCAG Failure Type                   | 2022  | 2021  |
 | ----------------------------------- | ----- | ----- |
