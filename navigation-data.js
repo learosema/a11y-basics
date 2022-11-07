@@ -3,7 +3,7 @@ module.exports = [
   'about-me',
   'agenda',
   'what-is-accessibility',
-  'accessibility-is-freedom',
+  'accessibility-is-independence',
   'everyone-benefits',
   'types-of-disabilities',
   'assistive-tools',
