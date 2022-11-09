@@ -20,6 +20,8 @@ module.exports = [
   'wcag-robust',
   'atag',
   'wai-aria',
+  'why-wai-aria',
+  'wai-aria-examples',
   'most-common-a11y-errors',
   'how-to-fix-buttons',
   'how-to-fix-buttons-fixed',

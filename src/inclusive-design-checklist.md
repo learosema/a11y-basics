@@ -6,7 +6,8 @@ layout: layouts/slide.njk
 
 # Inclusive web design checklist
 
-- has to be useable with just a keyboard
+- Specify the language you are using: `<html lang="de">`
+- it should work without using a mouse or any other pointer
 - provide visible focus styles
 - provide alternative text content for all non-media
 - don‘t use color alone to convey information
