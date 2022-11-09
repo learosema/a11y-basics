@@ -6,8 +6,12 @@ layout: layouts/slide.njk
 
 # Inclusive web design checklist
 
-- has to be useable without a mouse or any other pointer device
-- Check all color contrast ratios
+- has to be useable with just a keyboard
+- provide visible focus styles
+- provide alternative text content for all non-media
+- don‘t use color alone to convey information
+- check all color contrast ratios
 - provide a semantic structure in your HTML
 - headlines are your friend
-- use native elements
+- give users enough time to perceive content and to fill forms
+- keep it simple 
