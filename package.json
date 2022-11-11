@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "get-google-fonts": "^1.2.2",
-    "gulp-imagemin": "^8.0.0"
+    "gulp-imagemin": "^8.0.0",
+    "motion": "^10.14.3"
   }
 }

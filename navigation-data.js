@@ -21,6 +21,7 @@ module.exports = [
   'atag',
   'wai-aria',
   'why-wai-aria',
+  'semantic-html',
   'wai-aria-examples',
   'most-common-a11y-errors',
   'how-to-fix-buttons',

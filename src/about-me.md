@@ -17,3 +17,4 @@ background: /backgrounds/gray.svg
 
 - in ❤ with the Web platform
 - creates digital arts in her spare time
+- not an a11y expert (yet) but confident to give a talk about it

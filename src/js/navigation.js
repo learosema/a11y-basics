@@ -5,14 +5,13 @@ import { replaceDocument } from './replace-document';
  * Load content into page without a whole page reload
  * @param {string} href URL to route to
  * @param {boolean} pushState whether to call history.pushState or not
+ * @param {string} motion a motion parameter for page transitions
  */
-function load(href, pushState) {
+function load(href, pushState, motion) {
   const xhr = new XMLHttpRequest();
   xhr.onload = () => {
-    console.log('muh');
     const newDocument = xhr.responseXML;
-    replaceDocument(newDocument);
-    console.log('mäh');
+    replaceDocument(newDocument, motion);
     if (pushState) {
       history.pushState({}, newDocument.title || '', href);
     }
@@ -56,7 +55,7 @@ window.addEventListener('click', function (evt) {
     // as a single page application link.
     if (href.startsWith(baseUrl) || /^\w+\:\/\//.test(href) === false) {
       evt.preventDefault();
-      load(href, true);
+      load(href, true, el.getAttribute('data-motion'));
     } else {
       el.setAttribute('target', '_blank');
       el.setAttribute('rel', 'noopener nnoreferrer');

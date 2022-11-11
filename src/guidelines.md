@@ -6,8 +6,8 @@ background: /backgrounds/gray.svg
 
 # Guidelines
 
-## WCAG
+There are 3 major guidelines for Accessibility on the web
 
-## ATAG
-
-## WAI-ARIA
+- Web Content Accessibility guidelines (WCAG)
+- Authoring Tool Accessibility Guidelines (ATAG)
+- Accessible Rich Internet Applications by the Web Accessibility Initiative (WAI-ARIA)
