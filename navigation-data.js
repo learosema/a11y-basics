@@ -22,8 +22,10 @@ module.exports = [
   'wai-aria',
   'why-wai-aria',
   'semantic-html',
-  'wai-aria-examples',
   'most-common-a11y-errors',
   'how-to-fix-buttons',
   'how-to-fix-buttons-fixed',
+  'tools',
+  'patterns',
+  'thank-you',
 ];
