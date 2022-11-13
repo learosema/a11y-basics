@@ -1,6 +1,6 @@
 ---
 title: Accessibility Tools
-layout: layout/slide.njk
+layout: layouts/slide.njk
 ---
 
 # Accessibility Tools

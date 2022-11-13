@@ -3,7 +3,7 @@
 {% block content %}
 <div class="slide {{ variant }}">
   {% if background %}
-    <img class="slide__background" alt="" role="none" aria-hidden="true" src="{{ background }}">
+    <img class="background {{ backgroundVariant }}" alt="" role="none" aria-hidden="true" src="{{ background }}">
   {% endif %}
   <article class="slide__content | flow">
   {{ content | safe }}

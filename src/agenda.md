@@ -5,11 +5,11 @@ layout: layouts/slide.njk
 
 # Agenda
 
-- Accessibility on the web and why it’s important
+- Accessibility and why should we care?
+- Exclusionary Design
 - Disabilities
 - Assistive tools
-- Aspects of Inclusive Design on the Web
-- Exclusionary Design
+- Inclusive Design Checklist
 - Laws
 - Guidelines
 - Semantic HTML
