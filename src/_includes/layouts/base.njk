@@ -15,11 +15,11 @@
   <body>
     {% block header %}
     {% endblock %}
-    <main id="main-content" tabindex="-1">
-      {% block content %}
-        {{ content | safe }}
-      {% endblock %}
-    </main>
+    {% block content %}
+      <main tabindex="-1">
+      {{ content | safe }}
+      </main>
+    {% endblock %}
     <footer>
     {% block footer %}
     {% endblock %}

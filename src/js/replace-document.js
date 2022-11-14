@@ -1,4 +1,5 @@
 import { $, $$ } from './query';
+import { addSlide } from './slide-transitions';
 
 /**
  * Add additional script tags on demand
@@ -50,13 +51,22 @@ function applyTitleAndMetaData(newDocument) {
  * Put the contents of newDocument.main into the DOM, apply title and meta data, load additional scripts on demand.
  * @param {Document|XMLDocument} newDocument
  */
-export function replaceDocument(newDocument) {
+export async function replaceDocument(newDocument, where) {
   const container = $('main');
   const newContainer = $('main', newDocument);
   const footer = $('footer');
   const newFooter = $('footer', newDocument);
-  container.innerHTML = newContainer?.innerHTML || '';
-  footer.innerHTML = newFooter?.innerHTML || '';
+
+  const adoptedContainer = document.adoptNode(newContainer);
+  const success = await addSlide(adoptedContainer, where);
+  if (!success) {
+    return;
+  }
+
+  if (footer) {
+    footer.innerHTML = newFooter?.innerHTML || '';
+  }
+
   loadAdditionalScripts(newDocument);
   applyTitleAndMetaData(newDocument);
   window.scrollTo(0, 0);
