@@ -61,12 +61,20 @@ export const addSlide = async (newSlide, where) => {
   newSlide.setAttribute('aria-hidden', 'true');
   newSlide.setAttribute('tabindex', -1);
   newSlide.style.transform = transforms[where];
-
+  await wait(0);
   document.body.insertBefore(newSlide, currentSlide);
 
   await Promise.all([
-    animate(currentSlide, { transform: transforms[opposite] }),
-    animate(newSlide, { transform: 'translateX(0) translateY(0)' }),
+    animate(
+      currentSlide,
+      { transform: transforms[opposite] },
+      { duration: 500 }
+    ).finished,
+    animate(
+      newSlide,
+      { transform: 'translateX(0) translateY(0)' },
+      { duration: 500 }
+    ).finished,
   ]);
 
   currentSlide.remove();
