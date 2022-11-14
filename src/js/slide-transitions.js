@@ -68,12 +68,12 @@ export const addSlide = async (newSlide, where) => {
     animate(
       currentSlide,
       { transform: transforms[opposite] },
-      { duration: 500 }
+      { duration: 0.5 }
     ).finished,
     animate(
       newSlide,
       { transform: 'translateX(0) translateY(0)' },
-      { duration: 500 }
+      { duration: 0.5 }
     ).finished,
   ]);
 
