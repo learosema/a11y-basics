@@ -1,3 +1,8 @@
+---
+title: Thank you!
+layout: layouts/slide.njk
+---
+
 # Thank you!
 
 ## Used media

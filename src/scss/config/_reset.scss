@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+main[tabindex="-1"]:focus {
+  outline: none;
+}
+
 /* Remove default padding */
 ul[class],
 ol[class] {

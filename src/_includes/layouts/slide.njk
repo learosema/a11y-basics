@@ -1,7 +1,7 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-<div class="slide {{ variant }}">
+<main id="main-content" class="slide {{ variant }}" tabindex="-1">
   {% if background %}
     <img class="background {{ backgroundVariant }}" alt="" role="none" aria-hidden="true" src="{{ background }}">
   {% endif %}
@@ -11,7 +11,7 @@
   {% if sideImage %}
     <img class="slide__side-image" src="{{ sideImage }}" alt="{{ sideImageAlt }}" width="{{ sideImageWidth }}">
   {% endif %}
-</div>
+</main>
 {% endblock %}
 
 {% block footer %}
@@ -39,7 +39,7 @@
   <ul>
     <li>
       {% if previousSlide %}
-        <a class="button" href="{{ previousSlide.url }}">
+        <a class="button" href="{{ previousSlide.url }}" data-motion="left">
           {{ leftIcon | safe }} 
           <span class="visually-hidden">{{ previousSlide.data.title }}</span>
         </a>
@@ -52,7 +52,7 @@
     </li>
     <li>
       {% if nextSlide %}
-        <a class="button" href="{{ nextSlide.url }}">
+        <a class="button" href="{{ nextSlide.url }}" data-motion="right">
           {{ rightIcon | safe }}
           <span class="visually-hidden">{{ nextSlide.data.title }}</span>
         </a>
