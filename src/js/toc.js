@@ -1,20 +1,32 @@
 const tocButton = document.querySelector('#tocButton');
 const toc = document.querySelector('#tableOfContents');
 
-
-tocButton.addEventListener('click', () => {
+export const toggleTOC = () => {
   const expanded = tocButton.getAttribute('aria-expanded') === 'true';
   const newState = !expanded;
 
   if (newState) {
-    tocButton.setAttribute('aria-expanded', 'true');
-    toc.removeAttribute('hidden');
-    toc.focus();
+    showTOC();
   } else {
-    tocButton.setAttribute('aria-expanded', 'false');
-    toc.setAttribute('hidden', '');
-    toc.focus();
+    hideTOC();
   }
+}
+
+export const showTOC = () => {
+  tocButton.setAttribute('aria-expanded', 'true');
+  toc.removeAttribute('hidden');
+  toc.focus();
+}
+
+export const hideTOC = () => {
+  tocButton.setAttribute('aria-expanded', 'false');
+  toc.setAttribute('hidden', '');
+  document.querySelector('main').focus();
+}
+
+
+tocButton.addEventListener('click', () => {
+  toggleTOC();
 });
 
 window.addEventListener('focusin', (e) => {

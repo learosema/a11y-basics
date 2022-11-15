@@ -1,3 +1,5 @@
+import { hideTOC } from "./toc";
+
 window.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
     const prevButton = document.querySelector('#previousSlideButton');
@@ -12,5 +14,11 @@ window.addEventListener('keydown', (e) => {
       document.location.href = nextButton.getAttribute('href');
     }
     e.preventDefault();
+  }
+  if (e.key === 'Escape') {
+    const toc = document.querySelector('#tableOfContents');
+    if (! toc.hasAttribute('hidden')) {
+      hideTOC();
+    }
   }
 });
