@@ -19,6 +19,8 @@
 
   &:focus {
     outline: var(--button-outline);
+    background: var(--button-bg--primary-focus);
+    color: var(--button-fg--primary-focus);
   }
 
   &:hover {

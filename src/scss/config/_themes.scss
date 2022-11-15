@@ -12,6 +12,8 @@
 
   --button-bg--primary: transparent;
   --button-fg--primary: #{$white};
+  --button-bg--primary-focus: ${$black};
+  --button-fg--primary-focus: ${$white};
   --button-bg--primary-disabled: transparent;
   --button-fg--primary-disabled: #{$grey--200};
   --button-outline: 2px solid #{$white};
