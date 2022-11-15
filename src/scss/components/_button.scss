@@ -11,6 +11,7 @@
   font-family: inherit;
   font-size: inherit;
   transition: transform 200ms;
+  cursor: pointer;
 
   &:disabled {
     background: var(--button-bg--primary-disabled);
