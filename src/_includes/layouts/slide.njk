@@ -3,7 +3,7 @@
 {% block content %}
 <main id="main-content" class="slide {{ variant }}" tabindex="-1">
   {% if background %}
-    <img class="background {{ backgroundVariant }}" alt="" role="none" aria-hidden="true" src="{{ background }}">
+    <img class="background {{ backgroundVariant }}" alt="{{ backgroundAlt }}"{% if not backgroundAlt %} role="none" aria-hidden="true"{% endif %} src="{{ background }}">
   {% endif %}
   <article class="slide__content | flow">
   {{ content | safe }}
@@ -40,7 +40,7 @@
     <li>
       {% if previousSlide %}
         <a class="button" href="{{ previousSlide.url }}" data-motion="left">
-          {{ leftIcon | safe }} 
+          {{ leftIcon | safe }}
           <span class="visually-hidden">{{ previousSlide.data.title }}</span>
         </a>
       {% else %}

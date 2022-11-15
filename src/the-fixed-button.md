@@ -1,9 +1,9 @@
 ---
-title: How to fix buttons
+title: The fixed button
 layout: layouts/slide.njk
 ---
 
-# How to fix buttons
+# The fixed button
 
 ```js
 <button onclick="addToPlaylist()">

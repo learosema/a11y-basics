@@ -11,4 +11,9 @@
   &--darken {
     filter: brightness(50%);
   }
+
+  &--darken-25 {
+    filter: brightness(33%);
+  }
+
 }

@@ -1,7 +1,9 @@
 ---
 title: Guidelines
 layout: layouts/slide.njk
-background: /backgrounds/gray.svg
+background: /images/compass.jpg
+backgroundVariant: background--darken-25
+backgroundAlt: A hand holding a compass, sunset light reflecting on water in the background
 ---
 
 # Guidelines

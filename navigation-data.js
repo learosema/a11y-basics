@@ -4,6 +4,9 @@ module.exports = [
   'agenda',
   'what-is-accessibility',
   'exclusionary-design',
+  'stigmatizing-design',
+  'hostile-design',
+  'exclusionary-design-web',
   'accessibility-is-independence',
   'disabilities',
   'types-of-disabilities',
@@ -26,8 +29,9 @@ module.exports = [
   'semantic-html',
   'most-common-a11y-errors',
   'how-to-fix-buttons',
-  'how-to-fix-buttons-fixed',
+  'the-fixed-button',
   'tools',
   'patterns',
   'thank-you',
+  'attributions'
 ];

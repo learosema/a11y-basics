@@ -5,6 +5,9 @@ layout: layouts/slide.njk
 
 # Thank you!
 
-## Used media
+## Slides
 
-- [Westbahnhof Vienna, Hostile Benches](https://en.wikipedia.org/wiki/Hostile_architecture#/media/File:Westbahnhof,_hostile_benches_02.jpg)
+- These slides are available on [lea11y.de](https://lea11y.de)
+- Github: [github.com/learosema/a11y-basics](https://github.com/learosema/a11y-basics)
+- Ping me: [lea@lea.codes](mailto:lea@lea.codes)
+

@@ -4,6 +4,8 @@
 
 Hi, this is the repository for my a11y basics talk. It uses eleventy as a static site generator plus a gulp toolchain.
 
-- `npm run dev`
-- `npm run build`
-- 
+- `npm install` - install dependencies
+- `npm run dev` - run a dev server with browsersync
+- `npm run build` - run a full page build
+- `npx eleventy` - build just the html
+- `npx gulp` - build the scss, js and compress images

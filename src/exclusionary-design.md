@@ -1,13 +1,12 @@
 ---
 title: Exclusionary Design
 layout: layouts/slide.njk
-background: /images/Westbahnhof_hostile_benches_02.jpg
+background: /images/kloepperhaus.jpg
 backgroundVariant: background--darken
-backgroundAlt: Hostile benches at Vienna trainstation west, which are designed in a way that prevents homeless people from sleeping on it.
+backgroundAlt: Entrance of my workplace in the historical building in Hamburg, called Kloepperhaus, it is inaccessible for wheelchair users due to stairs
 variant: slide--centered
 ---
 
 # Exclusionary Design
 
-To design things to prevent users from doing a certain thing.
-These hostile benches are designed to prevent homeless people from sleeping on it.
+Entrance of my workplace in a historical building in Hamburg, called Altes Kloepperhaus, it is inaccessible for wheelchair users due to stairs.
