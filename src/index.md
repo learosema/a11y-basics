@@ -1,10 +1,10 @@
 ---
-title: Accessibility fundamentals
+title: Cover site
 background: /backgrounds/pink.svg
 layout: layouts/slide.njk
 variant: slide--centered
 ---
 
-# Accessibility fundamentals
+# Accessibility Basics Talk
 
-The things you need to know about creating inclusive user experiences.
+Lea's talk about Accessibility basics
