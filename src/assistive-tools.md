@@ -6,11 +6,12 @@ layout: layouts/slide.njk
 # Assistive Tools
 
 - Magnifiers, eg. ZoomText
-- Screen readers
+- [Screen readers](https://dequeuniversity.com/screenreaders/)
   - VoiceOver for Mac/iOS
   - Narrator for Windows
   - NVDA, JAWS
-- Braille display  
+- Braille display
 - alternative input devices for motor disabilities
 - Closed Captions
 - Transcript
+s
