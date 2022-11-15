@@ -1,9 +1,6 @@
 ---
 title: About Me
 layout: layouts/slide.njk
-variant: slide--with-image
-sideImage: /images/lea.jpg
-sideImageAlt: Lea, wearing a Novatec Shirt and a lace skirt
 background: /backgrounds/gray.svg
 ---
 
