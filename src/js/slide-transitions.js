@@ -22,7 +22,7 @@ const oppositeOf = (direction) => {
 
 const addSlideNoMotion = (newSlide) => {
   const currentSlide = $('.slide:not([aria-hidden="true"])');
-  if (!currentSlide || opposite === null) {
+  if (!currentSlide) {
     return;
   }
   newSlide.setAttribute('aria-hidden', 'true');

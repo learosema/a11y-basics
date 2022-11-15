@@ -56,6 +56,8 @@ export async function replaceDocument(newDocument, where) {
   const newContainer = $('main', newDocument);
   const footer = $('footer');
   const newFooter = $('footer', newDocument);
+  const header = $('header');
+  const newHeader = $('header', newDocument);
 
   const adoptedContainer = document.adoptNode(newContainer);
   const success = await addSlide(adoptedContainer, where);
@@ -65,6 +67,10 @@ export async function replaceDocument(newDocument, where) {
 
   if (footer) {
     footer.innerHTML = newFooter?.innerHTML || '';
+  }
+
+  if (header) {
+    newHeader.innerHTML = newHeader?.innerHTML || '';
   }
 
   loadAdditionalScripts(newDocument);

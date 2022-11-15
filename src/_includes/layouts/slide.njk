@@ -28,6 +28,10 @@
   {% include "icons/right.svg" %}
 {%- endset -%}
 
+{%- set tocIcon -%}
+  {% include "icons/toc.svg" %}
+{%- endset -%}
+
 {%- set rightIconAlt -%}
   <span class="visually-hidden">Next slide</span>
 {%- endset -%}
@@ -35,13 +39,14 @@
 {% set previousSlide = collections.slides | getPreviousCollectionItem(page) %}
 {% set nextSlide = collections.slides | getNextCollectionItem(page) %}
 
-<nav class="arrow-nav">
-  <ul>
+<nav class="arrow-nav" aria-labelledby="slideNavHeadline">
+  <h2 id="slideNavHeadline" class="visually-hidden">Slide navigation header</h2>
+  <ul role="list">
     <li>
       {% if previousSlide %}
-        <a class="button" href="{{ previousSlide.url }}" data-motion="left">
+        <a id="previousSlideButton" class="button" href="{{ previousSlide.url }}" data-motion="left">
           {{ leftIcon | safe }}
-          <span class="visually-hidden">{{ previousSlide.data.title }}</span>
+          <span class="visually-hidden">Previous slide</span>
         </a>
       {% else %}
         <button class="button" disabled>
@@ -52,9 +57,9 @@
     </li>
     <li>
       {% if nextSlide %}
-        <a class="button" href="{{ nextSlide.url }}" data-motion="right">
+        <a id="nextSlideButton" class="button" href="{{ nextSlide.url }}" data-motion="right">
           {{ rightIcon | safe }}
-          <span class="visually-hidden">{{ nextSlide.data.title }}</span>
+          <span class="visually-hidden">Next slide</span>
         </a>
       {% else %}
         <button class="button" disabled>
@@ -63,6 +68,19 @@
         </button>
       {% endif %}
     </li>
+    <li>
+      <button id="tocButton" class="button" aria-expanded="false" aria-controls="tableOfContents" aria-haspopup="true">
+        {{ tocIcon | safe }}
+        <span class="visually-hidden">Table of contents</span>
+      </button>
+    </li>
   </ul>
 </nav>
+{% endblock %}
+
+{% block aside %}
+<aside class="table-of-contents"id="tableOfContents" aria-labelledby="tableOfContentsHeadline" hidden tabindex="-1">
+  <h2 id="tableOfContentsHeadline">Table of contents</h2>
+  {% include "partials/navigation.njk" %}
+</aside>
 {% endblock %}

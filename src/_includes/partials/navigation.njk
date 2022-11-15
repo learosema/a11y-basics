@@ -1,12 +1,8 @@
-<nav class="navigation" id="top-nav" aria-label="Top navigation">
-  {% include 'partials/burger.njk' %}
-  <section class="navigation__layer">
-    <ul>
-    {% for item in collections.slides %}
-      <li>
-        <a href="{{ site.url }}{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.data.title }}</a>
-      </li>
-    {% endfor %}
-    </ul>
-  </section>
-</nav>
+
+<ul>
+{% for item in collections.slides %}
+  <li>
+    <a href="{{ site.url }}{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.data.title }}</a>
+  </li>
+{% endfor %}
+</ul>

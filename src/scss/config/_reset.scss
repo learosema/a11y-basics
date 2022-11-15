@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-main[tabindex="-1"]:focus {
+[tabindex="-1"]:focus {
   outline: none;
 }
 
@@ -64,6 +64,10 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+[hidden] {
+  display: none;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */

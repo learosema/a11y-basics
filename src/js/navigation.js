@@ -7,7 +7,7 @@ import { replaceDocument } from './replace-document';
  * @param {boolean} pushState whether to call history.pushState or not
  * @param {string} motion a motion parameter for page transitions
  */
-function load(href, pushState, motion) {
+export function load(href, pushState, motion) {
   const xhr = new XMLHttpRequest();
   xhr.onload = () => {
     const newDocument = xhr.responseXML;

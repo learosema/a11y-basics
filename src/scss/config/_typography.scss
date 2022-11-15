@@ -91,6 +91,13 @@ a {
   color: $cornflower--100;
   overflow-wrap: break-word;
 
+  &:focus {
+    outline: 2px solid #bff;
+    outline-offset: 2px;
+    background: #312;
+    color: #bff;
+  }
+
   &:hover {
     text-decoration: none;
   }

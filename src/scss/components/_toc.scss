@@ -1,0 +1,30 @@
+.table-of-contents {
+  position: fixed;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  color: #fff;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    list-style: none;
+    padding: 0;
+    li {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+
+  &[aria-expanded="true"] {
+    display: block;
+  }
+}
+

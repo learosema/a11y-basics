@@ -1,8 +1,9 @@
 .arrow-nav {
   position: fixed;
   bottom: 1rem;
-  right: 1rem; 
+  right: 1rem;
   width: 100%;
+  z-index: 5;
 
   ul {
     list-style: none;
@@ -12,7 +13,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
-  
+
     li {
       margin: 0;
       padding: 0;
