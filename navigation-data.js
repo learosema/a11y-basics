@@ -10,6 +10,11 @@ module.exports = [
   'accessibility-is-independence',
   'disabilities',
   'types-of-disabilities',
+  'color-blindness',
+  'low-vision',
+  'low-vision-design-considerations',
+  'blindness',
+  'blindness-design-considerations',
   'assistive-tools',
   'everyone-benefits',
   'inclusive-design-checklist',
@@ -33,5 +38,5 @@ module.exports = [
   'tools',
   'patterns',
   'thank-you',
-  'attributions'
+  'attributions',
 ];
