@@ -8,7 +8,6 @@ layout: layouts/slide.njk
 - Low vision
 - Color blindness
 - Motor and dexterity disabilities
-- Hearing disabilities
 - Deafness
 - Blindness
 - Deafblindness
