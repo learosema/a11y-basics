@@ -39,10 +39,8 @@ module.exports = [
   'good-aria-examples',
   'semantic-html',
   'most-common-a11y-errors',
-  'how-to-fix-buttons',
-  'the-fixed-button',
-  'tools',
   'patterns',
+  'tools',
   'thank-you',
   'attributions',
 ];
