@@ -12,6 +12,7 @@ background: /backgrounds/gray.svg
 
 #### Novatec GmbH
 
-- in ❤ with the Web platform
+- in <span role="img" aria-label="love">💖</span> with the Web platform
 - creates digital arts in her spare time
-- not an a11y expert (yet) but confident to give a talk about it
+- not an a11y expert (yet)
+- not gone through a11y certifaction, but it's a goal for 2023.
