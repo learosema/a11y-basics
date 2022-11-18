@@ -36,7 +36,6 @@ module.exports = [
   'atag',
   'wai-aria',
   'why-wai-aria',
-  'good-aria-examples',
   'semantic-html',
   'most-common-a11y-errors',
   'patterns',

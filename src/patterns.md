@@ -7,6 +7,7 @@ layout: layouts/slide.njk
 
 - [Guide to Keyboard Accessibility](https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-html-css-part1/)
 - [Skip Navigation Links](https://webaim.org/techniques/skipnav/)
+- [Accessible SVGs](https://css-tricks.com/accessible-svgs/)
 - [Accessible form validation](https://webaim.org/techniques/formvalidation/)
 - [Accessible focus indicators](https://www.sarasoueidan.com/blog/focus-indicators/)
 - [Accessible Modal Dialogs](https://www.w3.org/WAI/ARIA/apg/example-index/dialog-modal/dialog)
