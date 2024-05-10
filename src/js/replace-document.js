@@ -76,5 +76,5 @@ export async function replaceDocument(newDocument, where) {
   loadAdditionalScripts(newDocument);
   applyTitleAndMetaData(newDocument);
   window.scrollTo(0, 0);
-  container.focus();
+  window.setTimeout(() => container.focus(), 100);
 }
